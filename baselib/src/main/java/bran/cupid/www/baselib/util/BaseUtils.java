@@ -11,6 +11,12 @@ import android.util.DisplayMetrics;
 import android.view.Gravity;
 import android.widget.Toast;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 import bran.cupid.www.baselib.AppProxy;
 
 /**
@@ -19,7 +25,7 @@ import bran.cupid.www.baselib.AppProxy;
  * 描述：
  */
 public class BaseUtils {
-
+    private static final String TAG = "BaseUtils";
 
     /**
      * toast
@@ -172,5 +178,25 @@ public class BaseUtils {
      */
     public static String getBrand() {
         return Build.BRAND;
+    }
+
+    public static String fileToJson(String path) {
+        StringBuilder stringBuilder = new StringBuilder();
+        try {
+            File file = new File(path);
+
+            if (file.exists()) {
+                LogUtils.e(TAG, "开始读取json");
+                BufferedReader bf = new BufferedReader(new InputStreamReader(new FileInputStream(file)));
+                String line;
+                while ((line = bf.readLine()) != null) {
+                    stringBuilder.append(line);
+                }
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return stringBuilder.toString();
     }
 }
