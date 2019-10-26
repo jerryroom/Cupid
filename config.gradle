@@ -1,0 +1,76 @@
+ext {
+    android = [
+            compileSdkVersion:28,
+            buildToolsVersion:"28.0.3",
+            minSdkVersion    : 19,
+            targetSdkVersion : 27,
+
+            versionCode      : 1,
+            versionName      : "1.0.0",
+            applicationId      : "bran.cupid.www",
+    ]
+    //libraries
+    butterKnifeVersion = '8.8.1'
+    retrofitVersion = '2.2.0'
+    retrofitConverterGsonVersion = '2.2.0'
+    retrofitAdapterRxJavaVersion = '2.2.0'
+    rxAndroidVersion = '2.0.1'
+    rxJava = '2.1.2'
+    okhttpLoggingInterceptor = '3.8.1'
+    designVersion = '28.0.0'
+    appSurpport = '28.0.0'
+
+    multidexVersion = '1.0.1'
+    cardViewVersion = '28.0.0'
+    eventbusVersion = '3.1.1'
+    bannerVersion = '1.4.10'
+    butterKnifeCompilerVersion = '8.8.1'
+    smartRefreshVersion = '1.1.0-alpha-12'
+    recyclerView = '28.0.0'
+    gson = '2.8.1'
+    zxing = '3.3.3'
+    smartRefreshHeader = '1.1.0-alpha-12'
+    multiImageSelector = '1.2'
+    bottomBar = '2.0.4'
+    fragmention = '1.3.5'
+    swipeBack = '1.3.5'
+    overScroll = '1.0.4'
+    picasso = '2.4.0'
+    fragmentionEventBus = '1.1.0'
+    filedownloader = '1.7.5'
+
+    lib = [
+            butterKnife : "com.jakewharton:butterknife:${butterKnifeVersion}",
+            gsonConverter : "com.squareup.retrofit2:converter-gson:${retrofitConverterGsonVersion}",
+            retrofit : "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+            loggerInterceptor : "com.squareup.okhttp3:logging-interceptor:${okhttpLoggingInterceptor}",
+            rxjavaAdapter : "com.squareup.retrofit2:adapter-rxjava2:${retrofitAdapterRxJavaVersion}",
+            rxAndroid : "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}",
+            rxJava : "io.reactivex.rxjava2:rxjava:${rxJava}",
+            design : "com.android.support:design:${designVersion}",
+            multidex : "com.android.support:multidex:${multidexVersion}",
+            cardView : "com.android.support:cardview-v7:${cardViewVersion}",
+            eventbus : "org.greenrobot:eventbus:${eventbusVersion}",
+            banner : "com.youth.banner:banner:${bannerVersion}",
+            butterKnifeCompiler : "com.jakewharton:butterknife-compiler:${butterKnifeCompilerVersion}",
+            smartRefresh : "com.scwang.smartrefresh:SmartRefreshLayout:${smartRefreshVersion}",
+            appSurpport : "com.android.support:appcompat-v7:${appSurpport}",
+            recyclerView : "com.android.support:recyclerview-v7:${recyclerView}",
+            gson : "com.google.code.gson:gson:${gson}",
+            zxing_core : "com.google.zxing:core:${zxing}",
+            smartRefreshHeader:"com.scwang.smartrefresh:SmartRefreshHeader:${smartRefreshHeader}",
+            multiImageSelector:"com.github.lovetuzitong:MultiImageSelector:${multiImageSelector}",
+            bottomBar:"com.ashokvarma.android:bottom-navigation-bar:${bottomBar}",
+
+            fragmention : "me.yokeyword:fragmentation:${fragmention}",
+            swipeBack : "me.yokeyword:fragmentation-swipeback:${swipeBack}",
+            overScroll : "me.everything:overscroll-decor-android:${overScroll}",
+            fragmentionEventBus:"me.yokeyword:eventbus-activity-scope:${fragmentionEventBus}",
+
+            picasso: "com.squareup.picasso:picasso:${picasso}",
+            filedownloader : "com.liulishuo.filedownloader:library:${filedownloader}",
+
+    ]
+
+}
+
