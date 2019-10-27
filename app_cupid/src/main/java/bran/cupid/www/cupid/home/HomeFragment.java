@@ -2,6 +2,10 @@ package bran.cupid.www.cupid.home;
 
 import android.os.Bundle;
 
+import bran.cupid.www.baselib.eventbus.EventBean;
+import bran.cupid.www.baselib.eventbus.EventBus;
+import bran.cupid.www.baselib.eventbus.Subscribe;
+import bran.cupid.www.baselib.eventbus.ThreadMode;
 import bran.cupid.www.baselib.mvp.BaseFragment;
 import bran.cupid.www.baselib.mvp.PresenterImp;
 import bran.cupid.www.cupid.R;
@@ -12,6 +16,7 @@ import bran.cupid.www.cupid.R;
  * 描述：
  */
 public class HomeFragment extends BaseFragment<PresenterImp> {
+
 
     private static final String TAG = "HomeFragment";
     private static HomeFragment instance;
@@ -24,9 +29,13 @@ public class HomeFragment extends BaseFragment<PresenterImp> {
         return instance;
     }
 
-    @Override
-    protected void init() {
 
+    protected void init() {
+        EventBus.getEventBus().register(this);
+    }
+
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onEvent(EventBean eventBean) {
     }
 
     @Override

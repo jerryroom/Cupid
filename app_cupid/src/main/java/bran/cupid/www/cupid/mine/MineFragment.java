@@ -2,10 +2,14 @@ package bran.cupid.www.cupid.mine;
 
 import android.os.Bundle;
 
+import bran.cupid.www.baselib.eventbus.EventBean;
+import bran.cupid.www.baselib.eventbus.EventBus;
+import bran.cupid.www.baselib.eventbus.Subscribe;
+import bran.cupid.www.baselib.eventbus.ThreadMode;
 import bran.cupid.www.baselib.mvp.BaseFragment;
 import bran.cupid.www.baselib.mvp.PresenterImp;
+import bran.cupid.www.baselib.util.LogUtils;
 import bran.cupid.www.cupid.R;
-import bran.cupid.www.cupid.home.HomeFragment;
 
 /**
  * 作者: bran
@@ -23,9 +27,13 @@ public class MineFragment extends BaseFragment<PresenterImp> {
         instance.setArguments(args);
         return instance;
     }
-    @Override
-    protected void init() {
 
+    protected void init() {
+        EventBus.getEventBus().register(this);
+    }
+
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onEvent(EventBean eventBean) {
     }
 
     @Override

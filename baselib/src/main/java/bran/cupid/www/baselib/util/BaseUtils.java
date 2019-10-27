@@ -17,6 +17,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.List;
 
 import bran.cupid.www.baselib.AppProxy;
 
@@ -221,5 +222,9 @@ public class BaseUtils {
             e.printStackTrace();
         }
         return stringBuilder.toString();
+    }
+
+    public static boolean listIsEmpty(List list) {
+        return list == null || list.size() == 0;
     }
 }

@@ -15,9 +15,9 @@ public class JsonFile implements Serializable {
     public static final String MinePage = "minePage";
 //
 //    // 布局类型
-//    public static final int HEADER = 0;
-//    public static final int FOOTER = 1;
-//    public static final int BANNER = 2;
+    public static final int HEADER = 0;
+    public static final int FOOTER = 1;
+    public static final int BANNER = 2;
 
 
     public List<JsonItem> homeFragment;

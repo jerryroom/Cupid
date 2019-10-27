@@ -11,9 +11,12 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import bran.cupid.www.baselib.eventbus.EventBean;
+import bran.cupid.www.baselib.eventbus.EventBus;
 import bran.cupid.www.baselib.mvp.BaseFragment;
 import bran.cupid.www.baselib.mvp.PresenterImp;
 import bran.cupid.www.baselib.util.BaseUtils;
+import bran.cupid.www.baselib.util.LogUtils;
 import bran.cupid.www.baselib.util.SpUtils;
 import bran.cupid.www.cupid.base.Constant;
 import bran.cupid.www.cupid.config.JsonFile;
@@ -142,6 +145,8 @@ public class MainFragment extends BaseFragment implements BottomNavigationBar.On
         }
         showHideFragment(list.get(position), list.get(curPage));
         curPage = position;
+
+
     }
 
     @Override
