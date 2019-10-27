@@ -15,7 +15,7 @@ public class SubscribeMethod {
     public SubscribeMethod(Method method, ThreadMode threadMode, Class<?> paramsType) {
         this.method = method;
         this.threadMode = threadMode;
-        this.paramsType = paramsType;
+        this.paramsType = paramsType ;
     }
 
     public Method getMethod() {
