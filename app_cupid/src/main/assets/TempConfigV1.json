@@ -1,35 +1,38 @@
 {
-  "homeFragment": {},
-  "findFragment": {},
-  "mineFragment": {},
+  "homeFragment": [],
+  "findFragment": [],
+  "mineFragment": [],
   "pubConfig": {
     "mainColor": "#FF5347",
     "bigVersion": 1,
-    "version": "100",
+    "smallVersion": 100,
     "tabBar": [
       {
         "icon": "http://jfttest.itaiping.com/static/img/tabBar_homePage.png",
         "selectIcon": "http://jfttest.itaiping.com/static/img/tabBar_homePage_selected.png",
         "text": "首页",
+        "selectText": "首页",
         "tabView": "homePage",
         "tabBarTextColor": "#BBBCCD",
-        "tabBarTextSelectColor": "#F15A24"
+        "tabBarTextSelectColor": "#FF5347"
       },
       {
         "icon": "http://jfttest.itaiping.com/static/img/tabBar_findPage.png",
         "selectIcon": "http://jfttest.itaiping.com/static/img/tabBar_findPage_selected.png",
         "text": "发现",
+        "selectText": "发现",
         "tabView": "findPage",
         "tabBarTextColor": "#BBBCCD",
-        "tabBarTextSelectColor": "#F15A24"
+        "tabBarTextSelectColor": "#FF5347"
       },
       {
         "icon": "http://jfttest.itaiping.com/static/img/tabBar_userInfoPage.png",
         "selectIcon": "http://jfttest.itaiping.com/static/img/tabBar_userInfoPage_selected.png",
         "text": "我的",
-        "tabView": "userInfoPage",
+        "selectText": "我的",
+        "tabView": "minePage",
         "tabBarTextColor": "#BBBCCD",
-        "tabBarTextSelectColor": "#F15A24"
+        "tabBarTextSelectColor": "#FF5347"
       }
     ]
   }

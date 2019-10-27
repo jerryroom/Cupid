@@ -1,8 +1,11 @@
 package bran.cupid.www.cupid.mine;
 
+import android.os.Bundle;
+
 import bran.cupid.www.baselib.mvp.BaseFragment;
 import bran.cupid.www.baselib.mvp.PresenterImp;
 import bran.cupid.www.cupid.R;
+import bran.cupid.www.cupid.home.HomeFragment;
 
 /**
  * 作者: bran
@@ -10,6 +13,16 @@ import bran.cupid.www.cupid.R;
  * 描述：
  */
 public class MineFragment extends BaseFragment<PresenterImp> {
+    private static final String TAG = "MineFragment";
+    private static MineFragment instance;
+
+    public static MineFragment getInstance(Bundle args) {
+        if (instance == null) {
+            instance = new MineFragment();
+        }
+        instance.setArguments(args);
+        return instance;
+    }
     @Override
     protected void init() {
 
